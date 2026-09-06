@@ -1,5 +1,5 @@
-resource "aws_key_pair" "hyderabad"{
-    key_name = "hyderabad"
+resource "aws_key_pair" "custom_key"{
+    key_name = "custom_key"
     public_key = file("/root/.ssh/id_ed25519.pub")
 }
 resource "aws_instance" "ec2"{
